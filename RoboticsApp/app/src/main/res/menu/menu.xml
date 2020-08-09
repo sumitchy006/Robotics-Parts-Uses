@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item
+    android:id="@+id/theme1"
+    android:title="Theme-A" />
+<item
+    android:id="@+id/theme2"
+    android:title="Theme-B" />
+
+
+
+<item
+    android:id="@+id/signout"
+    android:title="Sign out" />
+
+</menu>
+

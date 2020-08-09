@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+
+<resources>
+
+
+
+    <string name="AB1">
+          Supervised by\n
+        Mr. Noushad Sojib\n
+        Lecturer dept. of CSE\n
+        North East University Bangladesh,Sylhet\n
+
+    </string>
+
+    <string name="AB2">
+
+          Developed By:\n\n
+        Sumit Chowdhury\n
+        ID: 170103020052\n
+        6th Semester\n\n
+
+        Washima Jannat Shahi\n
+        ID:170103020050\n
+        6th Semester\n
+    </string>
+
+
+
+    <string name="Blinking_led_t1"> শুরুতে আমরা একটি LED ব্লিংকিং
+        মাইক্রোকন্ট্রোলার প্রোজেক্ট যা আরডুইনর প্রথম প্রোজেক্ট বা, হ্যালো ওয়ার্ল্ড উপর কাজ করব। এটি একটি লাইট চালু এবং বন্ধ হিসাবে কাজ করে। আপনার মাজে এই গুরুত্বপূর্ণ বেসলাইনটি স্থাপন হয়ে গেলে
+        আপনি
+        একটি দৃঢ় ভিত্তি পাবেন যা আপনাকে আরও জটিল প্রোজেক্ট করতে help করবে।
+        \n\nপ্রয়োজনীয় উপাদানঃ\n\n
+আপনার নিম্নলিখিত উপাদান প্রয়োজন হবে -\n\n
+
+1 × ব্রেডবোর্ড\n
+1 × Arduino Uno\n
+1 × LED\n
+1 × 330Ω রোধ\n
+2 × জাম্পার\n
+        \n\nকার্যপ্রণালীঃ\n\n
+সার্কিট ডায়াগ্রামটি অনুসরণ করুন এবং নীচের চিত্রটিতে দেখানো ব্রেডবোর্ডে উপাদানগুলি হুক করুন।
+    </string>
+    <string name="Blinking_led_t2">
+
+        নোট - একটি LED এর polarity খুঁজে বের করতে, ঘনিষ্ঠভাবে এটিতে তাকান।
+
+\n\nস্কেচঃ\n
+       </string>
+
+    <string name="Blinking_led_t3">
+
+আপনার কম্পিউটারে Arduino আইডিই সফ্টওয়্যার খুলুন। Arduino ভাষার কোডিং আপনার সার্কিট নিয়ন্ত্রণ করবে। new ক্লিক করে নতুন স্কেচ ফাইল খুলুন।
+
+\n\nArduino কোড:\n\n
+        /*\n
+   Blink\n
+   Turns on an LED on for one second, then off for one second, repeatedly.\n
+*/\n
+
+// the setup function runs once when you press reset or power the board\n\n
+
+void setup() {\n\n  // initialize digital pin 13 as an output.
+   pinMode(2, OUTPUT);\n
+}\n\n
+
+// the loop function runs over and over again forever\n\n
+
+void loop() {\n\n
+   digitalWrite(2, HIGH); // turn the LED on (HIGH is the voltage level)\n
+   delay(1000); // wait for a second\n
+   digitalWrite(2, LOW); // turn the LED off by making the voltage LOW\n
+   delay(1000); // wait for a second\n\n
+}
+    </string>
+
+    <string name="led_with_botton_t1">
+         একটি Pushbutton ব্যবহার করে একটি LED এ স্যুইচিং, আমরা সুইচ হিসাবে একটি pushbutton ব্যবহার করব। যখন pushbutton চাপা হবে,তখন LED জ্বলবে।
+        \nআপননার প্রয়োজন হবে:\n\n
+
+        -আরোডিনো Uno\n
+        -Breadboard\n
+        -একটি Pushbutton\n
+         -একটি LED\n
+        -কিছু Wires\n
+
+        \nসার্কিট:\n
+
+
+        </string>
+
+    <string name="led_with_botton_t2">
+
+        Code :\n\n
+        int LED = 13;\n
+
+int BUTTON = 2;\n
+
+\nvoid setup()\n
+        {\n
+
+pinMode(LED,OUTPUT);\n
+
+pinMode(BUTTON,INPUT);\n
+
+}\n
+
+\nvoid loop()\n
+        {\n
+
+if(digitalRead(BUTTON) == HIGH)\n
+        {\n
+
+digitalWrite(LED,1);\n
+
+}\n
+        else\n
+        {\n
+
+digitalWrite(LED,0);\n
+
+}\n
+
+}\n
+
+        </string>
+
+
+            <string name="ldr_t1">
+                একটি LDR লাইট সেন্সর এর এনালগ ইনপুট অনুসারে PWM ব্যবহার করে একটি LED এর উজ্জ্বলতা সামঞ্জস্য করব।
+
+                \nপ্রয়োজনীয় উপাদানঃ\n\n
+
+                -আরোডিনো Uno\n
+                -Breadboard\n
+                -এক্টি LDR\n
+                -একটি NPN Transistor\n
+                -একটি LED\n
+                -কিছু Wires\n
+
+        \nসার্কিট:\n
+
+
+        </string>
+
+    <string name="ldr_t2">
+
+
+       Code:\n\n
+
+        #define led 11\n
+        void setup ()\n
+        {\n
+        pinMode (11, OUTPUT);\n
+        //এনালগ পিন এ স্বয়ংক্রিয়ভাবে ইনপুট সেট করা হয়\n
+        }\n
+        \nvoid loop ()\n
+        {\n
+        int value-analogRead (0);\n
+        // LDR এর আউটপুট Read করুণ\n
+        analogWrite (11, value/4);\n
+        //4 দ্বারা LDR ইনপুট বিভক্ত করে এবং সেই অনুযায়ী LED উজ্জ্বলতা সেট করে\n
+
+        }\n
+
+        </string>
+
+            <string name="rgb_led_t1">
+                 RGB LED 4 টার্মিনাল বিশিষ্ট ডিভাইস যা  RGB রঙের যেকোন রঙ তৈরি করতে পারে। এটি অ্যাক্টিভ করার জন্য, আমরা লাল, সবুজ এবং নীল
+                রঙের স্তরগুলি সামঞ্জস্য করতে PWM এ তার 2 টি ইনপুট পিন হিসেবে প্রদান করি।
+
+               \nপ্রয়োজনীয় উপাদানঃ\n\n
+                -আরোডিনো Uno\n
+                -BreadBoard\n
+                -একটি RGB LED\n
+                -কিছু Wires\n
+
+            \nসার্কিট:\n
+
+
+        </string>
+
+    <string name="rgb_led_t2">
+
+        Code:\n\n
+
+        #define redpin 11 // RED\n
+        #define greenpin 10 // GREEN\n
+        #define bluepin 6 // BLUE\n
+        \nvoid setup ()\n
+        {\n
+        pinMode (redpin, OUTPUT)\n
+        pinMode (greenpin, OUTPUT)\n
+        pinMode (bluepin, OUTPUT):\n
+        }\n
+
+       \nvoid loop()\n
+        {\n
+        //RED\n
+        analogwrite (redpin, 255):\n
+        analogwrite (greenpin, 0)\n
+        analogwrite (bluepin, 0)\n
+        delay (2000)\n
+        //GREEN\n
+        analogwrite (redpin, 0);\n
+        analogWrite (greenpin, 255)\n
+        analogwrite (bluepin, 0)\n
+        delay (2000)\n
+        //BLUE\n
+        analogwrite (redpin, 0)\n
+        analogwrite (greenpin, 0)\n
+        analogwrite (bluepin, 255)\n
+        delay (2000)\n
+        }\n
+
+
+        </string>
+
+            <string name="temperature_sensor_t1">
+
+
+                   \nপ্রয়োজনীয় উপাদানঃ\n\n
+                 -আরোডিনো Uno
+                 -BreadBoard
+                -LM35 Temperature Sensor
+                -কিছু Wires\n
+
+               \nসার্কিট:\n
+
+
+        </string>
+
+    <string name="temperature_sensor_t2">
+
+        Code:\n\n
+
+       void setup()\n
+        {\n
+        Serial.begin (9600); //open USB port\n
+        }\n
+       \nvoid loop()\n
+        {\n
+        float temp-0;\n
+        temp (5.0 analogRead (0) 100.0) 1024:\;\n
+        //Equation to approximately convert analog reading into actual Terperature.\n
+        Serial.printin(temp);\n
+        //Print temp to Serial Monitor:\n
+         }\n
+
+
+
+        </string>
+
+    <string name="temperature_s_t1">
+
+
+        </string>
+
+
+
+
+</resources>

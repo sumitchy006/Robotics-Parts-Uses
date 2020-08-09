@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:id="@+id/linearLayout"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="com.example.sumit_chowdhury.roboticsapp.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#22ffd6"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/bt_1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        style="@style/Widget.AppCompat.Button.Colored"
+        />
+
+
+    <Button
+        android:id="@+id/bt_2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        style="@style/Widget.AppCompat.Button.Colored"
+        />
+
+
+
+    <Button
+        android:id="@+id/bt_3"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        style="@style/Widget.AppCompat.Button.Colored"
+        />
+    <Button
+        android:id="@+id/bt_4"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_4"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        style="@style/Widget.AppCompat.Button.Colored"
+        />
+
+
+
+</LinearLayout>
